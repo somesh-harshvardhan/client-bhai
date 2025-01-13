@@ -1,9 +1,10 @@
+import { Outlet } from "react-router";
 import { Navigation } from "../navigation";
 
-export const Layout = ({ children }) => {
+export const Layout = () => {
   return (
-    <div className=" min-h-screen">
-      {children}
+    <div className=" h-screen">
+      <Outlet />
       <Navigation />
     </div>
   );

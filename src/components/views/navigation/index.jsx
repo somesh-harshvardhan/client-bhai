@@ -6,9 +6,9 @@ import { Link, useLocation } from "react-router";
 
 export const Navigation = () => {
   const location = useLocation();
-  console.log(location.pathname);
+
   return (
-    <div className=" fixed bottom-10 w-4/5 left-1/2 -translate-x-1/2">
+    <div className=" fixed bottom-10 w-[90%] left-1/2 -translate-x-1/2">
       <nav className=" flex justify-around items-center bg-[rgba(20,20,20,.85)] rounded-full px-3 py-4">
         <Link
           to={"/create-art"}
