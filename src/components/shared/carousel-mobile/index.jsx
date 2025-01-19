@@ -80,8 +80,8 @@ export const CarouselMobile = ({ handlePlay }) => {
               e.target.classList.add("btn-shine");
               setTimeout(() => {
                 e.target.classList.remove("btn-shine");
+                handlePlay();
               }, 1000);
-              handlePlay();
             }}
           >
             Create
