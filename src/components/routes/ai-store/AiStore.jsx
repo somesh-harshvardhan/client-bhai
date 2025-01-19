@@ -44,7 +44,7 @@ const AiStore = () => {
   ];
   return (
     <div
-      className=" h-screen w-full px-4 py-6 overflow-auto"
+      className=" h-screen overflow-auto w-full px-4 py-6 pb-[134px]"
       style={{
         background: "radial-gradient(at bottom left, #03045e 5% ,#141414 55% )",
       }}

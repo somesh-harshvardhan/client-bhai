@@ -155,7 +155,7 @@ const Home = () => {
   };
   return (
     <div
-      className=" h-screen overflow-auto w-full px-4 py-6"
+      className=" h-screen overflow-auto w-full px-4 py-6 pb-[134px]"
       style={{
         background: "radial-gradient(at bottom left, #03045e 5% ,#141414 55% )",
       }}
