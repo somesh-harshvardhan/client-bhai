@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { useState } from "react";
 
-export const CarouselMobile = () => {
+export const CarouselMobile = ({ handlePlay }) => {
   const [selected, setSelected] = useState(0);
   const list = [
     {
@@ -73,8 +73,17 @@ export const CarouselMobile = () => {
           </div>
         </div>
 
-        <div className=" fixed bottom-[150px] w-[90%] left-1/2 -translate-x-1/2">
-          <button className=" mt-auto block w-full py-5 uppercase bg-blue-800 text-white rounded-full">
+        <div className=" bottom-[150px] w-[90%]  mt-[80px] mx-auto">
+          <button
+            className="relative mt-auto block w-full py-5 uppercase bg-blue-800 text-white rounded-full overflow-hidden "
+            onClick={(e) => {
+              e.target.classList.add("btn-shine");
+              setTimeout(() => {
+                e.target.classList.remove("btn-shine");
+              }, 1000);
+              handlePlay();
+            }}
+          >
             Create
           </button>
         </div>
